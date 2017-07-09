@@ -1,0 +1,74 @@
+<html>
+  <head><meta name="viewport" content="width=device-width,initial-scale=1"></head>
+  <body>
+      <div id="navbar" class="navbar container-fluid fixed-top">
+        <h6 class="col-xs-12">Local Weather App</h6>
+      </div>
+    <table id="loading_table">
+      <tr>
+        <td><canvas id="sun"></canvas></td>
+        <td><canvas id="snow"></canvas></td>
+      </tr>
+      <tr>
+        <td><canvas id="rain"></canvas></td>
+        <td><canvas id="breeze"></canvas></td>
+      </tr>
+    </table>
+    <div id="main">
+      <div id="box" class="row container-fluid">
+        <div id="box_content" class="col-xs-6">
+          <p><br>
+            <strong>Temperature:</strong><br>
+            <span id="temp">...</span> 
+          <span id="tempSwitch"><strong> &#8451/&#8457</strong></span>
+          <br>
+            <strong>Wind:</strong><br>
+            <span id="wind">...</span> km/h
+            <br>
+            <strong>Precipitation:</strong><br>
+            <span id="precip">...</span> &nbsp;%
+          </p>
+        </div>
+        <div id="box_image" class="col-xs-6">
+           <canvas id="box_canvas"></canvas>
+          </div>  
+      </div>
+    <table id="week_box" class="container-fluid">
+      <tr>
+      <td><div id="day1" class="col-xs-3 days">
+        <strong id="wday1">Loading...</strong><br>
+        <canvas id="canvas1"></canvas><br>
+        <strong id="temp1">...</strong><strong> &#8451</strong><br>
+        <strong id="wind1">...</strong><strong> km/h</strong><br>
+        <strong id="precip1">...</strong><strong> %</strong>
+        </div></td>
+      <td><div id="day2" class="col-xs-3 days">
+        <strong id="wday2">Loading...</strong><br>
+        <canvas id="canvas2"></canvas><br>
+        <strong id="temp2">...</strong><strong> &#8451</strong><br>
+        <strong id="wind2">...</strong><strong> km/h</strong><br>
+        <strong id="precip2">...</strong><strong> %</strong>
+        </div></td>
+      <td><div id="day3" class="col-xs-3 days">
+        <strong id="wday3">Loading...</strong><br><canvas id="canvas3"></canvas><br>
+        <strong id="temp3">...</strong><strong> &#8451</strong><br>
+        <strong id="wind3">...</strong><strong> km/h</strong><br>
+        <strong id="precip3">...</strong><strong> %</strong>
+        </div></td>
+      <td><div id="day4" class="col-xs-3 days">
+        <strong id="wday4">Loading...</strong><br>
+        <canvas id="canvas4"></canvas><br>
+        <strong id="temp4">...</strong><strong> &#8451</strong><br>
+        <strong id="wind4">...</strong><strong> km/h</strong><br>
+        <strong id="precip4">...</strong><strong>%</strong>
+        </div></td>
+      </tr>
+    </table>
+    </div>
+  </body>
+  <footer class="navbar fixed-bottom">
+    <Strong>Application Powered By:</strong><br>
+    Dark Sky Forecast<br>
+    Dark Sky Skycons <br>
+  </footer>
+</html>
